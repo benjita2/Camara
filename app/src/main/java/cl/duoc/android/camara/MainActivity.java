@@ -42,6 +42,10 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    public void activityFull(View v){
+        startActivity(new Intent(this, CamaraFullActivity.class));
+    }
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if(requestCode == REQUEST_CODE && resultCode == Activity.RESULT_OK) {

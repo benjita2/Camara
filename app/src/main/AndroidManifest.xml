@@ -22,6 +22,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".CamaraFullActivity"></activity>
+        <!--
+        recomendable para android 7 y superior
         <provider
             android:authorities="cl.duoc.android.camara.fileprovider"
             android:name="android.support.v4.content.FileProvider"
@@ -34,6 +36,7 @@
                 >
             </meta-data>
         </provider>
+        -->
     </application>
 
 </manifest>

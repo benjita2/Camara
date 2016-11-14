@@ -52,7 +52,9 @@ public class CamaraFullActivity extends AppCompatActivity {
                 return;
             }
             if(photoFile != null) {
+                // recomendable para android 7 y superior
                 //Uri photoURI = FileProvider.getUriForFile(this, "cl.duoc.android.camara.fileprovider", photoFile);
+
                 Uri photoURI = Uri.fromFile(photoFile);
                 Log.v("CAMARADUOC", photoURI.toString());
                 Log.v("CAMARADUOC", photoFile.getAbsolutePath());
